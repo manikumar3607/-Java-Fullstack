@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Buying Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .car-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .car-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .car-card:hover {
+            transform: translateY(-5px);
+        }
+        .car-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .car-info {
+            padding: 1rem;
+        }
+        .car-name {
+            font-size: 1.5rem;
+            margin: 0 0 0.5rem 0;
+            color: #333;
+        }
+        .car-description {
+            color: #666;
+            margin: 0 0 1rem 0;
+            line-height: 1.4;
+        }
+        .car-price {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #4CAF50;
+            margin: 0 0 1rem 0;
+        }
+        .buy-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+        .buy-button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to AutoMart</h1>
+        <p>Find your dream car today!</p>
+    </header>
+    <main>
+        <div class="car-grid">
+            <div class="car-card">
+                <img src="image1.png" alt="Toyota Camry" class="car-image">
+                <div class="car-info">
+                    <h2 class="car-name">Toyota Camry</h2>
+                    <p class="car-description">Reliable sedan with excellent fuel efficiency and modern features.</p>
+                    <p class="car-price">$25,000</p>
+                    <button class="buy-button">Buy Now</button>
+                </div>
+            </div>
+            <div class="car-card">
+                <img src="image2.png" alt="Honda Civic" class="car-image">
+                <div class="car-info">
+                    <h2 class="car-name">Honda Civic</h2>
+                    <p class="car-description">Sporty and economical hatchback perfect for city driving.</p>
+                    <p class="car-price">$22,500</p>
+                    <button class="buy-button">Buy Now</button>
+                </div>
+            </div>
+            <div class="car-card">
+                <img src="image3.png" alt="Ford Mustang" class="car-image">
+                <div class="car-info">
+                    <h2 class="car-name">Ford Mustang</h2>
+                    <p class="car-description">Iconic American muscle car with powerful performance.</p>
+                    <p class="car-price">$35,000</p>
+                    <button class="buy-button">Buy Now</button>
+                </div>
+            </div>
+            <div class="car-card">
+                <img src="image4.png" alt="BMW X3" class="car-image">
+                <div class="car-info">
+                    <h2 class="car-name">BMW X3</h2>
+                    <p class="car-description">Luxury SUV combining comfort, technology, and driving dynamics.</p>
+                    <p class="car-price">$45,000</p>
+                    <button class="buy-button">Buy Now</button>
+                </div>
+            </div>
+            <div class="car-card">
+                <img src="image5.png" alt="Tesla Model 3" class="car-image">
+                <div class="car-info">
+                    <h2 class="car-name">Tesla Model 3</h2>
+                    <p class="car-description">Electric sedan with autopilot features and zero emissions.</p>
+                    <p class="car-price">$40,000</p>
+                    <button class="buy-button">Buy Now</button>
+                </div>
+            </div>
+            <div class="car-card">
+                <img src="image6.png" alt="Jeep Wrangler" class="car-image">
+                <div class="car-info">
+                    <h2 class="car-name">Jeep Wrangler</h2>
+                    <p class="car-description">Off-road capable SUV for adventure enthusiasts.</p>
+                    <p class="car-price">$30,000</p>
+                    <button class="buy-button">Buy Now</button>
+                </div>
+            </div>
+            <div class="car-card">
+                <img src="image1.png" alt="Audi A4" class="car-image">
+                <div class="car-info">
+                    <h2 class="car-name">Audi A4</h2>
+                    <p class="car-description">Premium sedan with advanced technology and refined interior.</p>
+                    <p class="car-price">$38,000</p>
+                    <button class="buy-button">Buy Now</button>
+                </div>
+            </div>
+            <div class="car-card">
+                <img src="image2.png" alt="Chevrolet Silverado" class="car-image">
+                <div class="car-info">
+                    <h2 class="car-name">Chevrolet Silverado</h2>
+                    <p class="car-description">Powerful pickup truck for work and play.</p>
+                    <p class="car-price">$32,000</p>
+                    <button class="buy-button">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 AutoMart. All rights reserved.</p>
+    </footer>
+</body>
+</html>
